@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="image-container">
+            <div class="logo-container">
+                <img src="img/odin-lined.png" class="logo" alt="Odin-project-logo">
+                <h1>ODIN</h1>
+            </div>
+        </div>
+    </header>
+    <main class="form-container">
+        <div class="form-intro">
+            <h2>This is not an a real online service! You know you need something like this in your life to help you realize your deepest dreams <br> Sign up <em>now</em> to get started</h2>
+            <h2>You <em>know</em> you want to.</h2>
+        </div>
+        <form action="post" class="sign-in">
+            <div class="input-section">
+                
+                <h2>Let's do this!</h2>
+                <div class="form-row">
+                    <div class="input-container"><label for="fname">FIRST NAME</label><input type="text" id="fname" name="fname" required></div>
+                    <div class="input-container"><label for="lname">LAST NAME</label><input type="text" id="lname" name="lname" required></div>
+                </div>
+                <div class="form-row">
+                    <div class="input-container"><label for="email">EMAIL</label><input type="email" id="email" name="email" pattern="^[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$" required></div>
+                    <div class="input-container"><label for="phone">PHONE NUMBER</label><input type="tel" id="phone" name="phone" required></div>
+                </div>
+                <div class="form-row">
+                    <div class="input-container"><label for="pwd">PASSWORD</label><input type="password" id="pwd" name="pwd" required></div>
+                    <div class="input-container"><label for="cpwd">CONFIRM PASSWORD</label><input type="password" id="cpwd" name="cpwd" required></div>
+                </div>
+                <span id="pwd-msg"></span>
+            </div>
+            <div class="button-container"><label for=""><button type="submit">CREATE ACCOUNT</button></label>
+                <div class="log-in-link">Already have an account? <a href="">Log in</a></div>
+            </div>
+
+        </form>
+        
+    </main>
+    
+</body>
+<script src="form.js"></script>
+</html>
